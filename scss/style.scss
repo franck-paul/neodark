@@ -250,6 +250,26 @@ tr:hover {
 td {
   padding: 0.3rem;
 }
+fieldset {
+  border: none;
+  padding: .25rem;
+}
+input, button, textarea {
+  font-family: "droid_sans";
+  font-size: 1rem;
+}
+input[type="text"] {}
+button, input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  color: #8a9199;
+  background: #272b30;
+  padding: 0 .5rem;
+  &:hover, &:focus, &:active {
+    color: #272b30;
+    background: #8a9199;
+  }
+}
 // Header and Sidebar content
 // --------------------------
 .header, .sidebar {
@@ -285,6 +305,20 @@ td {
 }
 .sidebar p {
   padding-top: 1rem;
+}
+.sidebar #search fieldset p {
+  display: grid;
+  grid-column-gap: .5rem;
+  grid-template-columns: 1fr 2rem;
+  align-items: center;
+  padding-top: .25rem;
+  input[type="text"] {
+    height: 1.25rem;
+    font-size: .9rem;
+  }
+  input[type="submit"] {
+    font-size: .9rem;
+  }
 }
 // Main content
 // ------------
