@@ -200,6 +200,28 @@ pre, code, kbd, tt, samp {
 blockquote, q {
   font-family: "droid_serif"; }
 
+blockquote {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  quotes: '\201C' '\201D'; }
+
+blockquote:before, blockquote:after {
+  margin-top: 0;
+  font-size: 3em;
+  display: block;
+  line-height: .25;
+  margin-bottom: 0; }
+
+blockquote:before {
+  content: open-quote;
+  float: left;
+  margin-right: .25em; }
+
+blockquote:after {
+  content: close-quote;
+  text-align: right; }
+
 blockquote em {
   font-style: normal; }
 
@@ -351,6 +373,10 @@ input[type="checkbox"] {
   margin-top: .5rem;
   margin-bottom: .5rem; }
 
+.content-info__cat-desc {
+  padding-top: 1rem;
+  font-size: .9rem; }
+
 .post, .alt-post {
   margin: 1rem 0;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
@@ -449,7 +475,8 @@ input[type="checkbox"] {
 .comments-list li {
   list-style-image: none;
   list-style-type: none;
-  padding-bottom: .5rem; }
+  padding-bottom: .5rem;
+  margin-left: 1rem; }
   .comments-list li.ping a {
     color: #8a8; }
 
@@ -459,6 +486,9 @@ input[type="checkbox"] {
 
 .comment-content {
   margin-left: 1.3rem; }
+  .comment-content li {
+    list-style-image: initial;
+    list-style-type: initial; }
 
 .comment-form, .send-ping {
   margin-top: 1rem; }
@@ -534,6 +564,40 @@ input[type="checkbox"] {
     border: none;
     font-weight: bold;
     color: #8a9199; }
+
+.arch-by-year__each-year {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1.5rem 0 0; }
+  .arch-by-year__each-year h4 {
+    margin-top: .5rem; }
+
+.arch-year-list {
+  margin-bottom: 1.5rem; }
+
+#other-criteria {
+  margin-top: 1rem; }
+  #other-criteria h3 {
+    margin-top: .5rem;
+    margin-bottom: .5rem; }
+
+.arch-list, .arch-sub-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .arch-list li, .arch-sub-list li {
+    margin-left: 0; }
+
+.arch-sub-cat-list {
+  margin: 0 0 0 1rem; }
+
+.arch-tag-list li {
+  display: inline;
+  padding-right: 1rem; }
+
+.content-inner h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 @font-face {
   font-family: 'droid_sans';
