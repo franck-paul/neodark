@@ -8,6 +8,18 @@ $large-screen: 80em;
 $wide-screen: 100em;
 // Maximum width for content
 $max-content: 50rem;
+// Mixins and fallbacks
+// --------------------
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 // Base
 // ----
 * {
@@ -197,6 +209,9 @@ h6 {
 }
 ol li, ul li {
   padding-top: 0.4rem;
+  margin-left: 2rem;
+}
+dd {
   margin-left: 2rem;
 }
 em {
@@ -402,6 +417,9 @@ input[type="checkbox"] {
   input[type="submit"] {
     font-size: .9rem;
   }
+}
+.blognav__title, .blogextra__title {
+  @include visually-hidden;
 }
 // Main content
 // ------------
