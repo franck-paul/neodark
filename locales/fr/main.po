@@ -21,3 +21,6 @@ msgstr "Prévisualiser"
 
 msgid "Send"
 msgstr "Envoyer"
+
+msgid "Required field"
+msgstr "Champ obligatoire"
