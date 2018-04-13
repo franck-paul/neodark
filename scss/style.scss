@@ -726,3 +726,101 @@ input[type="checkbox"] {
 .series-posts li.current {
   color: #8a8;
 }
+// Comment's wikibar
+.jstElements button {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: .25rem;
+  margin-right: .25rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: #ccc;
+  border: 1px solid;
+}
+.jstElements span {
+  display: none;
+}
+.jstb_strong {
+  background-image: inline-image('strong.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('strong.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_em {
+  background-image: inline-image('em.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('em.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_ins {
+  background-image: inline-image('ins.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('ins.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_del {
+  background-image: inline-image('del.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('del.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_quote {
+  background-image: inline-image('q.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('q.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_code {
+  background-image: inline-image('code.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('code.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_br {
+  background-image: inline-image('br.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('br.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_ul {
+  background-image: inline-image('ul.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('ul.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_ol {
+  background-image: inline-image('ol.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('ol.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_pre {
+  background-image: inline-image('pre.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('pre.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_bquote {
+  background-image: inline-image('blockquote.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('blockquote.svg');
+    filter: invert(.1);
+  }
+}
+.jstb_link {
+  background-image: inline-image('link.svg');
+  &:hover, &:focus, &:active {
+    background-image: inline-image('link.svg');
+    filter: invert(.1);
+  }
+}

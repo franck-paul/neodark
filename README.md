@@ -7,6 +7,6 @@ Templates, Javascript and PHP codes under GPL 2.0
 Style generation
 ----------------
 
-in scss subfolder, do :
+in main theme folder, do :
 
-    sass -watch .:..
+    compass watch
