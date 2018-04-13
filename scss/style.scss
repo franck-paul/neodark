@@ -1,4 +1,4 @@
-/* Based on CSS design by https://lord.re - CC4-BY-SA */
+/* Heavily based on CSS design by https://lord.re - CC4-BY-SA */
 
 // Configuration
 // -------------
@@ -19,6 +19,26 @@ $max-content: 50rem;
   padding: 0;
   position: absolute;
   width: 1px;
+}
+// Local fonts
+// -----------
+@font-face {
+  font-family: 'droid_sans';
+  src: url('font/DroidSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droid_serif';
+  src: url('font/DroidSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droid_mono';
+  src: url('font/DroidMono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 // Base
 // ----
@@ -573,6 +593,10 @@ input[type="checkbox"] {
     margin-bottom: .5rem;
   }
 }
+.comment-preview {
+  padding: 1rem;
+  background-color: #1d2024;
+}
 #comments .me .comment-info {
   color: #eeedf3;
 }
@@ -696,26 +720,6 @@ input[type="checkbox"] {
 .content-inner h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-// Local fonts
-// -----------
-@font-face {
-  font-family: 'droid_sans';
-  src: url('font/DroidSans.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'droid_serif';
-  src: url('font/DroidSerif.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'droid_mono';
-  src: url('font/DroidMono.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
 // Plugins elements
 // Series
