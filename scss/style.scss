@@ -387,6 +387,15 @@ button[disabled], input[disabled] {
 }
 input[type="checkbox"] {
   vertical-align: middle;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+input[type="checkbox"]:before {
+  content: inline-image('chk-off.svg');
+}
+input[type="checkbox"]:checked:before {
+  content: inline-image('chk-on.svg');
 }
 // Header and Sidebar content
 // --------------------------
@@ -441,6 +450,12 @@ input[type="checkbox"] {
 .blognav__title, .blogextra__title {
   @include visually-hidden;
 }
+.feed:before {
+  content: inline-image('feed.svg');
+  padding-right: .25rem;
+  vertical-align: sub;
+}
+
 // Main content
 // ------------
 #content {
@@ -464,6 +479,11 @@ input[type="checkbox"] {
 .content-info__cat-desc {
   padding-top: 1rem;
   font-size: .9rem;
+}
+.content-info__feed li, .syndicate li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 1rem;
 }
 .post, .alt-post {
   margin: 1rem 0;
@@ -509,10 +529,27 @@ input[type="checkbox"] {
 .post-date {
   color: #8a8;
   margin-left: .25rem;
+  &:before {
+    content: inline-image('date.svg');
+    padding-right: .25rem;
+    vertical-align: sub;
+  }
+}
+.post-permalink {
+  &:before {
+    content: inline-image('share.svg');
+    padding-right: .25rem;
+    vertical-align: sub;
+  }
 }
 .post-cat, .post-cat a {
   color: #757cab;
   margin-left: .25rem;
+}
+.post-cat:before {
+  content: inline-image('category.svg');
+  padding-right: .25rem;
+  vertical-align: sub;
 }
 .post-permalink, .post-permalink a {
   color: #a8a;
@@ -525,6 +562,11 @@ input[type="checkbox"] {
   overflow: hidden;
   display: inline;
   vertical-align: top;
+  li:first-child:before {
+    content: inline-image('tag.svg');
+    padding-right: .5rem;
+    vertical-align: sub;
+  }
 }
 .post li.post-tags-item {
   list-style-image: none;
@@ -561,8 +603,21 @@ input[type="checkbox"] {
 .post-attachments-title {
   padding-bottom: .5rem;
 }
-.post .comment_count, .post .ping_count {
+.post .comment_count, .post .ping_count, .post .attach_count {
   margin-right: .6em;
+  &:before {
+    padding-right: .25rem;
+    vertical-align: sub;
+  }
+}
+.post .comment_count:before {
+  content: inline-image('comment.svg');
+}
+.post .ping_count:before {
+  content: inline-image('ping.svg');
+}
+.post .attach_count:before {
+  content: inline-image('attachment.svg');
 }
 .comment-info {
   font-size: .8rem;
@@ -739,6 +794,10 @@ input[type="checkbox"] {
 }
 .jstElements span {
   display: none;
+}
+span.jstSpacer {
+  display: inline-block;
+  width: .3rem;
 }
 .jstb_strong {
   background-image: inline-image('strong.svg');
