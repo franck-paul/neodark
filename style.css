@@ -681,13 +681,48 @@ input[type="checkbox"]:checked:before {
 .arch-sub-cat-list {
   margin: 0 0 0 1rem; }
 
-.arch-tag-list li {
-  display: inline;
-  padding-right: 1rem; }
+.arch-tag-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .arch-tag-list li {
+    padding-right: 1rem; }
+  .arch-tag-list .tag100 {
+    font-size: 1.2rem; }
+  .arch-tag-list .tag90 {
+    font-size: 1.2rem; }
+  .arch-tag-list .tag80 {
+    font-size: 1.15rem; }
+  .arch-tag-list .tag70 {
+    font-size: 1.15rem; }
+  .arch-tag-list .tag60 {
+    font-size: 1.10rem; }
+  .arch-tag-list .tag50 {
+    font-size: 1.10rem; }
+  .arch-tag-list .tag40 {
+    font-size: 1.00rem; }
+  .arch-tag-list .tag30 {
+    font-size: 1.00rem; }
+  .arch-tag-list .tag30 {
+    font-size: 0.95rem; }
+  .arch-tag-list .tag20 {
+    font-size: 0.95rem; }
+  .arch-tag-list .tag10 {
+    font-size: 0.90rem; }
+  .arch-tag-list .tag0 {
+    font-size: 0.90rem; }
 
-.content-inner h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+.dc-404 #content, .dc-archive #content, .dc-tags #content, .dc-series #content, .dc-contactme #content {
+  margin: 1rem 0;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  border-top: 3px solid #547;
+  border-bottom: 1px solid #436;
+  border-left: 2px solid #444;
+  max-width: 50rem; }
+  .dc-404 #content header, .dc-404 #content .content-inner, .dc-404 #content footer, .dc-archive #content header, .dc-archive #content .content-inner, .dc-archive #content footer, .dc-tags #content header, .dc-tags #content .content-inner, .dc-tags #content footer, .dc-series #content header, .dc-series #content .content-inner, .dc-series #content footer, .dc-contactme #content header, .dc-contactme #content .content-inner, .dc-contactme #content footer {
+    margin: 2rem; }
+  .dc-404 #content .content-inner h3, .dc-archive #content .content-inner h3, .dc-tags #content .content-inner h3, .dc-series #content .content-inner h3, .dc-contactme #content .content-inner h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
 
 .series-posts li.current {
   color: #8a8; }

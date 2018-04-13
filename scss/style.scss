@@ -778,21 +778,71 @@ input[type="checkbox"]:checked:before {
 .arch-sub-cat-list {
   margin: 0 0 0 1rem;
 }
-.arch-tag-list li {
-  display: inline;
-  padding-right: 1rem;
+.arch-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    padding-right: 1rem;
+  }
+  .tag100 {
+    font-size: 1.2rem;
+  }
+  .tag90 {
+    font-size: 1.2rem;
+  }
+  .tag80 {
+    font-size: 1.15rem;
+  }
+  .tag70 {
+    font-size: 1.15rem;
+  }
+  .tag60 {
+    font-size: 1.10rem;
+  }
+  .tag50 {
+    font-size: 1.10rem;
+  }
+  .tag40 {
+    font-size: 1.00rem;
+  }
+  .tag30 {
+    font-size: 1.00rem;
+  }
+  .tag30 {
+    font-size: 0.95rem;
+  }
+  .tag20 {
+    font-size: 0.95rem;
+  }
+  .tag10 {
+    font-size: 0.90rem;
+  }
+  .tag0 {
+    font-size: 0.90rem;
+  }
 }
-// 404
-.content-inner h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+// Various
+.dc-404 #content, .dc-archive #content, .dc-tags #content, .dc-series #content, .dc-contactme #content {
+  margin: 1rem 0;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  border-top: 3px solid #547;
+  border-bottom: 1px solid #436;
+  border-left: 2px solid #444;
+  max-width: $max-content;
+  header, .content-inner, footer {
+    margin: 2rem;
+  }
+  .content-inner h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 // Plugins elements
+// ----------------
 // Series
 .series-posts li.current {
   color: #8a8;
-}
-// Comment's wikibar
+} // Comment's wikibar
 .jstElements button {
   width: 1.5rem;
   height: 1.5rem;
