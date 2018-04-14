@@ -15,7 +15,7 @@ Plugin Comment's wikibar: do not include the plugin's CSS (see plugin's setting)
 Style generation
 ----------------
 
-in main theme folder, do :
+in main theme folder, do:
 
     compass watch
 
@@ -24,4 +24,5 @@ Licenses
 
 CSS heavily based on the design by https://lord.re/ - CC4-BY-SA
 Icons from https://material.io/icons/ - Apache license 2.0
-Templates, Javascript and PHP codes (if any) by Franck Paul - GPL 2.0
+Smilies from https://github.com/googlei18n/noto-emoji - Apache license 2.0
+Templates, Javascript and PHP codes by Franck Paul - GPL 2.0

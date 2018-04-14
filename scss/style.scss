@@ -329,10 +329,12 @@ figure {
   text-align: center;
 }
 img, figure img, audio, video, iframe {
-  display: block;
   max-width: 100%;
   max-height: 90vh;
   height: auto;
+}
+figure img, audio, video, iframe {
+  display: block;
 }
 hr {
   margin-top: 1rem;
@@ -743,6 +745,9 @@ input[type="checkbox"]:checked:before {
       color: #8a9199;
     }
   }
+}
+img.smiley {
+  height: 1em;
 }
 // Contexts
 // --------
