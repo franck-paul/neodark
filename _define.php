@@ -9,18 +9,15 @@
  *
  * @copyright Franck Paul (carnet.franck.paul@gmail.com)
  * @copyright GPL-2.0
- *
- * @copyright Original CSS by https://lord.re/
- * @copyright CC4-BY-SA
  */
 
 if (!defined('DC_RC_PATH')) {return;}
 
 $this->registerModule(
-    "NeoDark",                                                    // Name
-    "NeoDark theme for Dotclear 2 - design by https://lord.re/)", // Description
-    "Franck Paul",                                                // Author
-    '1.0',                                                        // Version
+    "NeoDark",                                                   // Name
+    "NeoDark theme for Dotclear 2 - design by https://lord.re/", // Description
+    "Franck Paul",                                               // Author
+    '1.0',                                                       // Version
     array(
         'type'   => 'theme', // Type
         'tplset' => 'dotty' // tplset

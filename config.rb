@@ -17,3 +17,4 @@ environment = :development
 line_comments = false
 
 Sass::Script::Number.precision = 7
+sourcemap = true

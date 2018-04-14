@@ -583,11 +583,9 @@ input[type="checkbox"]:checked:before {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
-  margin-right: .5em;
+  margin-right: .5rem;
   display: inline-block;
-  vertical-align: middle;
   white-space: nowrap;
-  vertical-align: top;
   a {
     color: #8aa;
   }
@@ -707,7 +705,7 @@ input[type="checkbox"]:checked:before {
   position: absolute;
   top: 0;
   left: 0;
-  margin: -.5em 0 0 1em;
+  margin: -.5rem 0 0 1rem;
   padding: 0;
   border: 0;
   overflow: hidden;
@@ -715,7 +713,7 @@ input[type="checkbox"]:checked:before {
     list-style-image: none;
     list-style-type: none;
     display: inline-block;
-    margin: 0 .5em 0 0;
+    margin: 0 .5rem 0 0;
     a {
       color: #272b30;
       &:hover, &:active, &:focus {
@@ -728,8 +726,8 @@ input[type="checkbox"]:checked:before {
   display: none;
   z-index: 1000;
   position: fixed;
-  bottom: .5em;
-  right: .5em;
+  bottom: .5rem;
+  right: .5rem;
   width: 10em;
   padding: .25em;
   border: 1px solid #636363;
