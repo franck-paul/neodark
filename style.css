@@ -440,7 +440,7 @@ input[type="checkbox"]:checked:before {
   border-top: 3px solid #547;
   border-bottom: 1px solid #436;
   border-left: 2px solid #444;
-  max-width: 50rem; }
+  max-width: calc(80ch + 4rem); }
   .post header, .post .post-excerpt, .post .post-content, .post footer, .alt-post header, .alt-post .post-excerpt, .alt-post .post-content, .alt-post footer {
     margin: 2rem; }
   .post .post-day-date, .alt-post .post-day-date {
@@ -615,7 +615,7 @@ input[type="checkbox"]:checked:before {
 .navlinks {
   text-align: right;
   margin-top: 1rem;
-  max-width: 50rem; }
+  max-width: calc(80ch + 4rem); }
 
 .skip-links {
   font-size: .5rem;
@@ -721,7 +721,7 @@ img.smiley {
   border-top: 3px solid #547;
   border-bottom: 1px solid #436;
   border-left: 2px solid #444;
-  max-width: 50rem; }
+  max-width: calc(80ch + 4rem); }
   .dc-404 #content header, .dc-404 #content .content-inner, .dc-404 #content footer, .dc-archive #content header, .dc-archive #content .content-inner, .dc-archive #content footer, .dc-tags #content header, .dc-tags #content .content-inner, .dc-tags #content footer, .dc-series #content header, .dc-series #content .content-inner, .dc-series #content footer, .dc-contactme #content header, .dc-contactme #content .content-inner, .dc-contactme #content footer {
     margin: 2rem; }
   .dc-404 #content .content-inner h3, .dc-archive #content .content-inner h3, .dc-tags #content .content-inner h3, .dc-series #content .content-inner h3, .dc-contactme #content .content-inner h3 {

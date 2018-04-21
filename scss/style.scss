@@ -6,8 +6,8 @@
 $medium-screen: 58em;
 $large-screen: 80em;
 $wide-screen: 100em;
-// Maximum width for content
-$max-content: 50rem;
+// Maximum width for content (80 characters + margins)
+$max-content: calc(80ch + 4rem); // was 50rem;
 // Mixins and fallbacks
 // --------------------
 @mixin visually-hidden {
