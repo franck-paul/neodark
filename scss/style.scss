@@ -79,6 +79,8 @@ body {
   grid-row: 1;
 }
 #main {
+  // Thank's Raphaël Goetter for the trick
+  min-width: 0;
   grid-row: 2;
 }
 .sidebar {
@@ -92,9 +94,8 @@ body {
   #page {
     display: grid;
     grid-column-gap: 2rem;
-    grid-row-gap: 0; // 1fr is sometime buggy with pre/code, so use calc()
-    // 20rem = first col size (18rem) + column gap (2rem)
-    grid-template-columns: 18rem calc(100% - 20rem);
+    grid-row-gap: 0;
+    grid-template-columns: 18rem 1fr;
     grid-template-rows: min-content 1fr min-content;
   }
   .header {
@@ -106,6 +107,8 @@ body {
     grid-row: 2 / span 2;
   }
   #main {
+    // Thank's Raphaël Goetter for the trick
+    min-width: 0;
     grid-column: 2;
     grid-row: 1 / span 2;
   }
