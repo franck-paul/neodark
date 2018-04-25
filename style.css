@@ -277,15 +277,23 @@ figure {
   margin-top: 0.5rem;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
   outline: 3px solid black;
-  text-align: center; }
+  text-align: center;
+  padding: .5rem; }
 
-img, figure img, audio, video, iframe {
+figcaption {
+  margin-top: .5rem; }
+
+img, figure img, video, iframe {
+  display: inline-block;
+  margin: 0;
   max-width: 100%;
   max-height: 90vh;
   height: auto; }
 
-figure img, audio, video, iframe {
-  display: inline-block; }
+audio {
+  display: inline-block;
+  margin: 0;
+  max-width: 100%; }
 
 hr {
   margin-top: 1rem;
@@ -417,6 +425,8 @@ input[type="checkbox"]:checked:before {
   padding-top: 1.4rem; }
 #content h2 {
   padding-top: 1.3rem; }
+#content p + figure {
+  margin-top: .5rem !important; }
 #content p, #content details {
   padding-top: 1rem; }
 #content dd, #content dt {
@@ -424,6 +434,8 @@ input[type="checkbox"]:checked:before {
 #content audio, #content video, #content iframe {
   margin-top: 1rem;
   margin-bottom: 1rem; }
+  #content audio + p, #content video + p, #content iframe + p {
+    padding-top: 0; }
 
 .content-info__cat-desc {
   padding-top: 1rem;

@@ -330,14 +330,22 @@ figure {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
   outline: 3px solid black;
   text-align: center;
+  padding: .5rem;
 }
-img, figure img, audio, video, iframe {
+figcaption {
+  margin-top: .5rem;
+}
+img, figure img, video, iframe {
+  display: inline-block;
+  margin: 0;
   max-width: 100%;
   max-height: 90vh;
   height: auto;
 }
-figure img, audio, video, iframe {
+audio {
   display: inline-block;
+  margin: 0;
+  max-width: 100%;
 }
 hr {
   margin-top: 1rem;
@@ -475,6 +483,9 @@ input[type="checkbox"]:checked:before {
   h2 {
     padding-top: 1.3rem;
   }
+  p + figure {
+    margin-top: .5rem !important; // As top and bottom margin might be set to 0 by centering bordered figure
+  }
   p, details {
     padding-top: 1rem;
   }
@@ -484,6 +495,9 @@ input[type="checkbox"]:checked:before {
   audio, video, iframe {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    & + p {
+      padding-top: 0;
+    }
   }
 }
 .content-info__cat-desc {
