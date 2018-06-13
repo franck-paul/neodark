@@ -17,7 +17,7 @@ $this->registerModule(
     "NeoDark",                                                   // Name
     "NeoDark theme for Dotclear 2 - design by https://lord.re/", // Description
     "Franck Paul",                                               // Author
-    '1.1',                                                       // Version
+    '1.2',                                                       // Version
     array(
         'type'   => 'theme', // Type
         'tplset' => 'dotty' // tplset
