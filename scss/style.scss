@@ -411,6 +411,11 @@ input[type="checkbox"]:before {
 input[type="checkbox"]:checked:before {
   content: inline-image('chk-on.svg');
 }
+// a11y
+// ----
+.sr {
+  @include visually-hidden;
+}
 // Header and Sidebar content
 // --------------------------
 .header, .sidebar {
