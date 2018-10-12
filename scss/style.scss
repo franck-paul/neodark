@@ -488,7 +488,7 @@ input[type="checkbox"]:checked:before {
   h2 {
     padding-top: 1.3rem;
   }
-  p + figure {
+  p+figure {
     margin-top: .5rem !important; // As top and bottom margin might be set to 0 by centering bordered figure
   }
   p, details {
@@ -500,7 +500,7 @@ input[type="checkbox"]:checked:before {
   audio, video, iframe {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    & + p {
+    &+p {
       padding-top: 0;
     }
   }
@@ -876,8 +876,93 @@ img.smiley {
   margin-right: .25rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-color: #272b30 !important;
   color: #ccc;
   border: 1px solid;
+  &.jstb_strong {
+    background-image: inline-image('strong.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('strong.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_em {
+    background-image: inline-image('em.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('em.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_ins {
+    background-image: inline-image('ins.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('ins.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_del {
+    background-image: inline-image('del.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('del.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_quote {
+    background-image: inline-image('q.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('q.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_code {
+    background-image: inline-image('code.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('code.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_br {
+    background-image: inline-image('br.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('br.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_ul {
+    background-image: inline-image('ul.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('ul.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_ol {
+    background-image: inline-image('ol.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('ol.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_pre {
+    background-image: inline-image('pre.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('pre.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_bquote {
+    background-image: inline-image('blockquote.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('blockquote.svg');
+      filter: invert(.1);
+    }
+  }
+  &.jstb_link {
+    background-image: inline-image('link.svg');
+    &:hover, &:focus, &:active {
+      background-image: inline-image('link.svg');
+      filter: invert(.1);
+    }
+  }
 }
 .jstElements span {
   display: none;
@@ -885,88 +970,4 @@ img.smiley {
 span.jstSpacer {
   display: inline-block;
   width: .3rem;
-}
-.jstb_strong {
-  background-image: inline-image('strong.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('strong.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_em {
-  background-image: inline-image('em.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('em.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_ins {
-  background-image: inline-image('ins.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('ins.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_del {
-  background-image: inline-image('del.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('del.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_quote {
-  background-image: inline-image('q.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('q.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_code {
-  background-image: inline-image('code.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('code.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_br {
-  background-image: inline-image('br.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('br.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_ul {
-  background-image: inline-image('ul.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('ul.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_ol {
-  background-image: inline-image('ol.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('ol.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_pre {
-  background-image: inline-image('pre.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('pre.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_bquote {
-  background-image: inline-image('blockquote.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('blockquote.svg');
-    filter: invert(.1);
-  }
-}
-.jstb_link {
-  background-image: inline-image('link.svg');
-  &:hover, &:focus, &:active {
-    background-image: inline-image('link.svg');
-    filter: invert(.1);
-  }
 }
