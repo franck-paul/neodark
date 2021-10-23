@@ -22,6 +22,10 @@ $this->registerModule(
     [
         'requires' => [['core', '2.13']], // Dependencies
         'type'     => 'theme',            // Type
-        'tplset'   => 'dotty'            // tplset
+        'tplset'   => 'dotty',            // tplset
+
+        'details'    => 'https://open-time.net/?q=neodark',       // Details URL
+        'support'    => 'https://github.com/franck-paul/neodark', // Support URL
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/neodark/main/dcstore.xml'
     ]
 );
