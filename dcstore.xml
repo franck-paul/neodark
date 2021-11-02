@@ -1,8 +1,8 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="neodark">
-    <name>NeoDark</name>
+    <name>NeoDark theme for Dotclear 2 - design by https://lord.re/</name>
     <version>1.3</version>
-    <author>Franck Paul</author>
+    <author>NeoDark theme for Dotclear 2 - design by https://lord.re/</author>
     <desc>NeoDark theme for Dotclear 2 - design by https://lord.re/</desc>
     <file>https://github.com/franck-paul/neodark/releases/download/1.3/theme-neodark-1.3.zip</file>
     <da:dcmin>2.13</da:dcmin>
