@@ -15,17 +15,17 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    'NeoDark',                                                   // Name
-    'NeoDark theme for Dotclear 2 - design by https://lord.re/', // Description
-    'Franck Paul',                                               // Author
-    '1.3',                                                       // Version
+    'NeoDark',
+    'NeoDark theme for Dotclear 2 - design by https://lord.re/',
+    'Franck Paul',
+    '2.0',
     [
-        'requires' => [['core', '2.13']], // Dependencies
-        'type'     => 'theme',            // Type
-        'tplset'   => 'dotty',            // tplset
+        'requires' => [['core', '2.24']],
+        'type'     => 'theme',
+        'tplset'   => 'dotty',
 
-        'details'    => 'https://open-time.net/?q=neodark',       // Details URL
-        'support'    => 'https://github.com/franck-paul/neodark', // Support URL
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/neodark/master/dcstore.xml'
+        'details'    => 'https://open-time.net/?q=neodark',
+        'support'    => 'https://github.com/franck-paul/neodark',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/neodark/master/dcstore.xml',
     ]
 );

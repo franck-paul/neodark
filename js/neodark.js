@@ -2,21 +2,21 @@
 'use strict';
 // Add js class to  html
 $('html').addClass('js');
-$(document).ready(function () {
+$(() => {
   // totop scroll
   $(window).scroll(function () {
-    if ($(this).scrollTop() != 0) {
-      $('#gotop').fadeIn();
-    } else {
+    if ($(this).scrollTop() == 0) {
       $('#gotop').fadeOut();
+    } else {
+      $('#gotop').fadeIn();
     }
   });
-  $('#gotop').on('click', function (e) {
+  $('#gotop').on('click', (e) => {
     $('body,html').animate(
       {
         scrollTop: 0,
       },
-      800
+      800,
     );
     e.preventDefault();
   });
