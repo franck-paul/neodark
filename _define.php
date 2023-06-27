@@ -10,17 +10,13 @@
  * @copyright Franck Paul (carnet.franck.paul@gmail.com)
  * @copyright GPL-2.0
  */
-if (!defined('DC_RC_PATH')) {
-    return;
-}
-
 $this->registerModule(
     'NeoDark',
     'NeoDark theme for Dotclear 2 - design by https://lord.re/',
     'Franck Paul',
-    '2.0',
+    '3.0',
     [
-        'requires' => [['core', '2.24']],
+        'requires' => [['core', '2.26']],
         'type'     => 'theme',
         'tplset'   => 'dotty',
 

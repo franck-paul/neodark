@@ -1,4 +1,11 @@
 NeoDark theme for Dotclear 2
+
+[![Release](https://img.shields.io/github/v/release/franck-paul/neodark)](https://github.com/franck-paul/neodark/releases)
+[![Date](https://img.shields.io/github/release-date/franck-paul/neodark)](https://github.com/franck-paul/neodark/releases)
+[![Issues](https://img.shields.io/github/issues/franck-paul/neodark)](https://github.com/franck-paul/neodark/issues)
+[![Dotaddict](https://img.shields.io/badge/dotaddict-official-green.svg)](https://themes.dotaddict.org/dc2/details/neodark)
+[![License](https://img.shields.io/github/license/franck-paul/neodark)](https://github.com/franck-paul/neodark/blob/master/LICENSE)
+
 ============================
 
 Dark theme with 2 columns (laptop) or 1 column (mobile).
