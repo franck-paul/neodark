@@ -16,7 +16,7 @@ $this->registerModule(
     'Franck Paul',
     '3.0',
     [
-        'requires' => [['core', '2.26']],
+        'requires' => [['core', '2.27'], ['php', '8.1']],
         'type'     => 'theme',
         'tplset'   => 'dotty',
 
