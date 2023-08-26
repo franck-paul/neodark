@@ -1,11 +1,11 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="neodark">
     <name>NeoDark</name>
-    <version>3.0</version>
+    <version>4.0</version>
     <author>Franck Paul</author>
     <desc>NeoDark theme for Dotclear 2 - design by https://lord.re/</desc>
-    <file>https://github.com/franck-paul/neodark/releases/download/3.0/theme-neodark-3.0.zip</file>
-    <da:dcmin>2.26</da:dcmin>
+    <file>https://github.com/franck-paul/neodark/releases/download/4.0/theme-neodark-4.0.zip</file>
+    <da:dcmin>2.27</da:dcmin>
     <da:details>https://open-time.net/?q=neodark</da:details>
     <da:support>https://github.com/franck-paul/neodark</da:support>
   </module>
