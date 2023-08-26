@@ -14,7 +14,7 @@ $this->registerModule(
     'NeoDark',
     'NeoDark theme for Dotclear 2 - design by https://lord.re/',
     'Franck Paul',
-    '3.0',
+    '4.0',
     [
         'requires' => [['core', '2.27'], ['php', '8.1']],
         'type'     => 'theme',
