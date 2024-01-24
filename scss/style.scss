@@ -69,7 +69,7 @@ html {
 
 body {
   text-rendering: optimizelegibility;
-  font-feature-settings: "kern";
+  font-feature-settings: 'kern';
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
   -webkit-font-smoothing: antialiased;
@@ -148,7 +148,7 @@ body {
   position: relative;
 
   &:after {
-    content: " ";
+    content: ' ';
     position: absolute;
     width: 2em;
     right: -2em;
@@ -207,12 +207,12 @@ a {
 }
 
 a[hreflang]:after {
-  content: " ["attr(hreflang)"]";
+  content: ' [' attr(hreflang) ']';
   font-size: smaller;
 }
 
-a[hreflang="en"]:lang(en):after,
-a[hreflang="fr"]:lang(fr):after {
+a[hreflang='en']:lang(en):after,
+a[hreflang='fr']:lang(fr):after {
   content: none;
 }
 
@@ -224,7 +224,7 @@ article a {
 
 a:hover {
   outline: 1px solid;
-  outline-offset: .3em;
+  outline-offset: 0.3em;
   border-bottom: 1px dashed #ff4500; // orangered
 }
 
@@ -295,7 +295,7 @@ strong {
 mark {
   color: #1d2024;
   background: #f9e380;
-  padding: 0 .125em;
+  padding: 0 0.125em;
 }
 
 del {
@@ -310,14 +310,14 @@ pre code {
 }
 
 pre,
-:not(pre)>code {
+:not(pre) > code {
   border: 1px dashed black;
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .4) inset;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.4) inset;
   background: #1d2024;
-  margin-top: .5rem;
-  font-size: .7rem;
-  line-height: .9rem;
-  padding: .25rem;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  padding: 0.25rem;
 }
 
 pre,
@@ -325,19 +325,19 @@ code,
 kbd,
 tt,
 samp {
-  font-family: "droid_mono";
+  font-family: 'droid_mono';
 }
 
 blockquote,
 q {
-  font-family: "droid_serif";
+  font-family: 'droid_serif';
 }
 
 blockquote {
   margin-top: 1.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  quotes: '\201C''\201D';
+  quotes: '\201C' '\201D';
 }
 
 blockquote:before,
@@ -345,14 +345,14 @@ blockquote:after {
   margin-top: 0;
   font-size: 3em;
   display: block;
-  line-height: .25;
+  line-height: 0.25;
   margin-bottom: 0;
 }
 
 blockquote:before {
   content: open-quote;
   float: left;
-  margin-right: .25em;
+  margin-right: 0.25em;
 }
 
 blockquote:after {
@@ -374,28 +374,28 @@ cite::after {
   content: close-quote;
 }
 
-:lang(en)>q,
-:lang(en)>cite {
-  quotes: '“ '' ”''‘''’';
+:lang(en) > q,
+:lang(en) > cite {
+  quotes: '“ ' ' ”' '‘' '’';
 }
 
-:lang(fr)>q,
-:lang(fr)>cite {
-  quotes: '« '' »''‘''’';
+:lang(fr) > q,
+:lang(fr) > cite {
+  quotes: '« ' ' »' '‘' '’';
 }
 
-:lang(de)>q,
-:lang(de)>cite {
-  quotes: '» '' «''‘''’';
+:lang(de) > q,
+:lang(de) > cite {
+  quotes: '» ' ' «' '‘' '’';
 }
 
 // Footnotes markdown
-sup[id^="fnref"]:before {
-  content: "[";
+sup[id^='fnref']:before {
+  content: '[';
 }
 
-sup[id^="fnref"]:after {
-  content: "]";
+sup[id^='fnref']:after {
+  content: ']';
 }
 
 figure h5 {
@@ -411,11 +411,15 @@ figure {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
   outline: 3px solid black;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
+}
+
+figure.media-center {
+  margin-top: 0.5rem;
 }
 
 figcaption {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 img,
@@ -444,7 +448,7 @@ table {
   margin: 1rem;
 
   caption {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -467,25 +471,26 @@ td {
 
 fieldset {
   border: none;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 input,
 button,
 textarea {
-  font-family: "droid_sans";
+  font-family: 'droid_sans';
   font-size: 1rem;
   border: none;
 }
 
 button,
-input[type="submit"],
-input[type="button"] {
+input[type='submit'],
+input[type='button'] {
   -webkit-appearance: button;
+  appearance: button;
   cursor: pointer;
   color: #8a9199;
   background: #272b30;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   border: 2px solid;
 
   &:hover,
@@ -507,7 +512,7 @@ input[disabled] {
   }
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   vertical-align: middle;
   appearance: none;
   -moz-appearance: none;
@@ -515,11 +520,11 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-input[type="checkbox"]:before {
+input[type='checkbox']:before {
   content: inline-image('chk-off.svg');
 }
 
-input[type="checkbox"]:checked:before {
+input[type='checkbox']:checked:before {
   content: inline-image('chk-on.svg');
 }
 
@@ -558,7 +563,7 @@ input[type="checkbox"]:checked:before {
     list-style-image: none;
     list-style-type: none;
     margin: 0;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 }
 
@@ -567,7 +572,7 @@ input[type="checkbox"]:checked:before {
 }
 
 .sidebar h3 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .sidebar p {
@@ -576,18 +581,18 @@ input[type="checkbox"]:checked:before {
 
 .sidebar #search fieldset p {
   display: grid;
-  grid-column-gap: .5rem;
+  grid-column-gap: 0.5rem;
   grid-template-columns: 1fr 2rem;
   align-items: center;
-  padding-top: .25rem;
+  padding-top: 0.25rem;
 
-  input[type="text"] {
+  input[type='text'] {
     height: 1.25rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
-  input[type="submit"] {
-    font-size: .9rem;
+  input[type='submit'] {
+    font-size: 0.9rem;
   }
 }
 
@@ -604,7 +609,7 @@ input[type="checkbox"]:checked:before {
 
 .feed:before {
   content: inline-image('feed.svg');
-  padding-right: .25rem;
+  padding-right: 0.25rem;
   vertical-align: sub;
 }
 
@@ -619,8 +624,8 @@ input[type="checkbox"]:checked:before {
     padding-top: 1.3rem;
   }
 
-  p+figure {
-    margin-top: .5rem !important; // As top and bottom margin might be set to 0 by centering bordered figure
+  p + figure {
+    margin-top: 0.5rem !important; // As top and bottom margin might be set to 0 by centering bordered figure
   }
 
   p,
@@ -639,7 +644,7 @@ input[type="checkbox"]:checked:before {
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    &+p {
+    & + p {
       padding-top: 0;
     }
   }
@@ -647,11 +652,11 @@ input[type="checkbox"]:checked:before {
 
 .content-info__cat-desc {
   padding-top: 1rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .content-info__feed {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 
   li {
     list-style-image: none;
@@ -705,12 +710,12 @@ input[type="checkbox"]:checked:before {
 
 .alt-post h2 a,
 .post:nth-child(even) h2 a {
-  color: #99C3D1;
+  color: #99c3d1;
 }
 
 .post-meta {
   margin-top: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .post-author a {
@@ -719,11 +724,11 @@ input[type="checkbox"]:checked:before {
 
 .post-date {
   color: #8a8;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 
   &:before {
     content: inline-image('date.svg');
-    padding-right: .25rem;
+    padding-right: 0.25rem;
     vertical-align: sub;
   }
 }
@@ -731,13 +736,13 @@ input[type="checkbox"]:checked:before {
 .post-permalink {
   &:before {
     content: inline-image('share.svg');
-    padding-right: .25rem;
+    padding-right: 0.25rem;
     vertical-align: sub;
   }
 }
 
 .post-cat {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 
   a {
     color: #757cab;
@@ -746,12 +751,12 @@ input[type="checkbox"]:checked:before {
 
 .post-cat:before {
   content: inline-image('category.svg');
-  padding-right: .25rem;
+  padding-right: 0.25rem;
   vertical-align: sub;
 }
 
 .post-permalink {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 
   a {
     color: #a8a;
@@ -768,7 +773,7 @@ input[type="checkbox"]:checked:before {
 
   li:first-child:before {
     content: inline-image('tag.svg');
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     vertical-align: sub;
   }
 }
@@ -777,7 +782,7 @@ input[type="checkbox"]:checked:before {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   display: inline-block;
   white-space: nowrap;
 
@@ -811,16 +816,16 @@ input[type="checkbox"]:checked:before {
 }
 
 .post-attachments-title {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .post .comment_count,
 .post .ping_count,
 .post .attach_count {
-  margin-right: .6em;
+  margin-right: 0.6em;
 
   &:before {
-    padding-right: .25rem;
+    padding-right: 0.25rem;
     vertical-align: sub;
   }
 }
@@ -838,13 +843,13 @@ input[type="checkbox"]:checked:before {
 }
 
 .comment-info {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .comments-list li {
   list-style-image: none;
   list-style-type: none;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   margin-left: 1rem;
 
   &.ping a {
@@ -854,7 +859,7 @@ input[type="checkbox"]:checked:before {
 
 .comment-number {
   color: #a8a;
-  margin-right: .6rem;
+  margin-right: 0.6rem;
 }
 
 .comment-content {
@@ -871,7 +876,7 @@ input[type="checkbox"]:checked:before {
   margin-top: 1rem;
 
   h3 {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -898,12 +903,7 @@ input[type="checkbox"]:checked:before {
   display: block;
   width: 95%;
   background: #ccc;
-  margin-top: .5rem;
-}
-
-.form-help,
-.remember {
-  //  font-size: .8rem;
+  margin-top: 0.5rem;
 }
 
 // Footer
@@ -912,7 +912,7 @@ input[type="checkbox"]:checked:before {
 }
 
 .footer h3 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer p {
@@ -929,12 +929,12 @@ input[type="checkbox"]:checked:before {
 // Special elements
 // ----------------
 .skip-links {
-  font-size: .5rem;
+  font-size: 0.5rem;
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  margin: -.5rem 0 0 1rem;
+  margin: -0.5rem 0 0 1rem;
   padding: 0;
   border: 0;
   overflow: hidden;
@@ -943,7 +943,7 @@ input[type="checkbox"]:checked:before {
     list-style-image: none;
     list-style-type: none;
     display: inline-block;
-    margin: 0 .5rem 0 0;
+    margin: 0 0.5rem 0 0;
 
     a {
       color: #272b30;
@@ -961,18 +961,17 @@ input[type="checkbox"]:checked:before {
   display: none;
   z-index: 1000;
   position: fixed;
-  bottom: .5rem;
-  right: .5rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
   width: 10em;
-  padding: .25em;
+  padding: 0.25em;
   border: 1px solid #636363;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #333;
-  font-size: .75em;
+  font-size: 0.75em;
   text-align: center;
 
   a {
-
     &:link,
     &:hover,
     &:active {
@@ -997,7 +996,7 @@ img.smiley {
   margin: 0 1.5rem 0 0;
 
   h4 {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1009,8 +1008,8 @@ img.smiley {
   margin-top: 1rem;
 
   h3 {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -1054,19 +1053,19 @@ img.smiley {
   }
 
   .tag60 {
-    font-size: 1.10rem;
+    font-size: 1.1rem;
   }
 
   .tag50 {
-    font-size: 1.10rem;
+    font-size: 1.1rem;
   }
 
   .tag40 {
-    font-size: 1.00rem;
+    font-size: 1rem;
   }
 
   .tag30 {
-    font-size: 1.00rem;
+    font-size: 1rem;
   }
 
   .tag30 {
@@ -1078,11 +1077,11 @@ img.smiley {
   }
 
   .tag10 {
-    font-size: 0.90rem;
+    font-size: 0.9rem;
   }
 
   .tag0 {
-    font-size: 0.90rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1122,8 +1121,8 @@ img.smiley {
 .jstElements button {
   width: 1.5rem !important;
   height: 1.5rem !important;
-  margin-top: .25rem !important;
-  margin-right: .25rem !important;
+  margin-top: 0.25rem !important;
+  margin-right: 0.25rem !important;
   background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
   background-color: #272b30 !important;
@@ -1191,5 +1190,5 @@ img.smiley {
 
 span.jstSpacer {
   display: inline-block;
-  width: .3rem;
+  width: 0.3rem;
 }
