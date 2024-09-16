@@ -4,7 +4,7 @@
 $('html').addClass('js');
 $(() => {
   // totop scroll
-  $(window).scroll(function () {
+  $(window).on('scroll', function () {
     if ($(this).scrollTop() == 0) {
       $('#gotop').fadeOut();
     } else {

@@ -22,6 +22,6 @@ $this->registerModule(
 
         'details'    => 'https://open-time.net/?q=neodark',
         'support'    => 'https://github.com/franck-paul/neodark',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/neodark/master/dcstore.xml',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/neodark/main/dcstore.xml',
     ]
 );
