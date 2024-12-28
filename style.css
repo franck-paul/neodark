@@ -278,6 +278,19 @@ cite::after {
 :lang(de) > cite {
   quotes: '» ' ' «' '‘' '’'; }
 
+sup,
+sub {
+  font-size: calc(0.5em + 4px);
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: calc(-0.83 * (1em - 4px)); }
+
+sub {
+  top: calc(0.415 * (1em - 4px)); }
+
 sup[id^='fnref']:before {
   content: '['; }
 
