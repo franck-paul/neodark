@@ -14,10 +14,6 @@ Header is in top of left column
 Menu and Extra widgets go to the left column, under Header
 Custom widgets go under main content, in footer
 
-# Tuning
-
-Plugin Comment's wikibar: do not include the plugin's CSS (see plugin's setting) as it has been included in this theme
-
 # Style generation
 
 in main theme folder, do:
