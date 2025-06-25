@@ -26,21 +26,21 @@ $max-content: calc(80ch + 4rem); // was 50rem;
 // -----------
 @font-face {
   font-family: 'droid_sans';
-  src: url('font/DroidSans.woff') format('woff');
+  src: url(index.php?tf=font/DroidSans.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'droid_serif';
-  src: url('font/DroidSerif.woff') format('woff');
+  src: url(index.php?tf=font/DroidSerif.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'droid_mono';
-  src: url('font/DroidMono.woff') format('woff');
+  src: url(index.php?tf=font/DroidMono.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
