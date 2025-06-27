@@ -15,9 +15,9 @@ $this->registerModule(
     'NeoDark',
     'NeoDark theme for Dotclear 2 - design by https://lord.re/',
     'Franck Paul',
-    '5.3',
+    '6.0',
     [
-        'date'     => '2025-05-15T18:46:46+0200',
+        'date'     => '2025-06-27T13:21:05+0200',
         'requires' => [['core', '2.35']],
         'type'     => 'theme',
         'tplset'   => 'dotty',
