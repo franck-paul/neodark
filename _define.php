@@ -11,21 +11,25 @@
  * @copyright Franck Paul (contact@open-time.net)
  * @copyright GPL-2.0
  */
-$this->registerModule(
-    'NeoDark',
-    'NeoDark theme for Dotclear 2 - design by https://lord.re/',
-    'Franck Paul',
-    '7.0',
-    [
-        'date'     => '2025-09-07T14:20:31+0200',
-        'requires' => [['core', '2.36']],
-        'type'     => 'theme',
-        'tplset'   => 'dotty',
-        'overload' => true,
+declare(strict_types=1);
 
-        'details'    => 'https://open-time.net/?q=neodark',
-        'support'    => 'https://github.com/franck-paul/neodark',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/neodark/main/dcstore.xml',
-        'license'    => 'gpl2',
-    ]
-);
+if (isset($this) && is_object($this) && method_exists($this, 'registerModule') && isset($this->id) && is_string($this->id)) {
+    $this->registerModule(
+        'NeoDark',
+        'NeoDark theme for Dotclear 2 - design by https://lord.re/',
+        'Franck Paul',
+        '7.0',
+        [
+            'date'     => '2025-09-07T14:20:31+0200',
+            'requires' => [['core', '2.36']],
+            'type'     => 'theme',
+            'tplset'   => 'dotty',
+            'overload' => true,
+
+            'details'    => 'https://open-time.net/?q=neodark',
+            'support'    => 'https://github.com/franck-paul/neodark',
+            'repository' => 'https://raw.githubusercontent.com/franck-paul/neodark/main/dcstore.xml',
+            'license'    => 'gpl2',
+        ]
+    );
+}
