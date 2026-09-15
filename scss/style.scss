@@ -14,12 +14,12 @@ $max-content: calc(80ch + 4rem); // was 50rem;
 @mixin visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
-  height: 1px;
+  block-size: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+  inline-size: 1px;
 }
 
 // Local fonts
@@ -140,31 +140,31 @@ body {
 // -----------
 .header,
 .sidebar {
-  border-right: 2px solid #414;
-  border-bottom: none;
+  border-inline-end: 2px solid #414;
+  border-block-end: none;
   padding: 1rem;
   color: #757c82;
-  text-align: left; // Shadow on right border
+  text-align: start; // Shadow on right border
   position: relative;
 
   &:after {
     content: ' ';
     position: absolute;
-    width: 2em;
-    right: -2em;
-    height: 100%;
-    top: 0px;
+    inline-size: 2em;
+    inset-inline-end: -2em;
+    block-size: 100%;
+    inset-block-start: 0px;
     box-shadow: 1em 0 1em -1em rgba(0, 0, 0, 0.4) inset;
   }
 }
 
 .header {
-  padding-top: 5rem;
+  padding-block-start: 5rem;
 }
 
 .sidebar {
-  padding-top: 2rem;
-  border-bottom: 2px solid #414;
+  padding-block-start: 2rem;
+  border-block-end: 2px solid #414;
 }
 
 #main {
@@ -173,7 +173,10 @@ body {
 
 .footer {
   margin: 2rem;
-  padding: 2rem 2rem 1rem 2rem;
+  padding-block-start: 2rem;
+  padding-block-end: 1rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
   color: #ccc;
   background-color: #222;
 }
@@ -187,7 +190,7 @@ body {
 
   .header,
   .sidebar {
-    border-right: 4px solid #414;
+    border-inline-end: 4px solid #414;
   }
 }
 
@@ -203,7 +206,7 @@ body {
 a {
   color: #aa7c82;
   text-decoration: none;
-  border-bottom: 1px dotted;
+  border-block-end: 1px dotted;
 }
 
 a[hreflang]:after {
@@ -218,14 +221,14 @@ a[hreflang='fr']:lang(fr):after {
 
 article a {
   text-decoration: none;
-  border-bottom: 1px dashed; //  outline: 1px dotted rgba(255, 255, 255, 0.3);
+  border-block-end: 1px dashed; //  outline: 1px dotted rgba(255, 255, 255, 0.3);
   //  outline-offset: .2em;
 }
 
 a:hover {
   outline: 1px solid;
   outline-offset: 0.3em;
-  border-bottom: 1px dashed #ff4500; // orangered
+  border-block-end: 1px dashed #ff4500; // orangered
 }
 
 // Usually blog title
@@ -865,8 +868,8 @@ input[type='checkbox']:checked:before {
 .comments-list li {
   list-style-image: none;
   list-style-type: none;
-  padding-bottom: 0.5rem;
-  margin-left: 1rem;
+  padding-block-end: 0.5rem;
+  margin-inline-start: 1rem;
 
   &.ping a {
     color: #8a8;
@@ -875,11 +878,11 @@ input[type='checkbox']:checked:before {
 
 .comment-number {
   color: #a8a;
-  margin-right: 0.6rem;
+  margin-inline-end: 0.6rem;
 }
 
 .comment-content {
-  margin-left: 1.3rem;
+  margin-inline-start: 1.3rem;
 
   li {
     list-style-image: initial;
@@ -889,10 +892,10 @@ input[type='checkbox']:checked:before {
 
 .comment-form,
 .send-ping {
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 
   h3 {
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
   }
 }
 
@@ -907,37 +910,37 @@ input[type='checkbox']:checked:before {
 
 .field label {
   display: inline-block;
-  width: 10em;
+  inline-size: 10em;
 }
 
 .field input {
-  max-width: 100%;
+  max-inline-size: 100%;
 }
 
 .field textarea {
   display: block;
-  width: 95%;
-  margin-top: 0.5rem;
+  inline-size: 95%;
+  margin-block-start: 0.5rem;
 }
 
 // Footer
 .footer h2 {
-  padding-bottom: 1rem;
+  padding-block-end: 1rem;
 }
 
 .footer h3 {
-  padding-bottom: 0.5rem;
+  padding-block-end: 0.5rem;
 }
 
 .footer p {
-  padding-top: 1rem;
+  padding-block-start: 1rem;
 }
 
 // Navigation
 .navlinks {
-  text-align: right;
-  margin-top: 1rem;
-  max-width: $max-content;
+  text-align: end;
+  margin-block-start: 1rem;
+  max-inline-size: $max-content;
 }
 
 // Special elements
@@ -946,9 +949,12 @@ input[type='checkbox']:checked:before {
   font-size: 0.5rem;
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  margin: -0.5rem 0 0 1rem;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  margin-block-start: -0.5rem;
+  margin-block-end: 0;
+  margin-inline-start: 1rem;
+  margin-inline-end: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
@@ -957,7 +963,10 @@ input[type='checkbox']:checked:before {
     list-style-image: none;
     list-style-type: none;
     display: inline-block;
-    margin: 0 0.5rem 0 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0.5rem;
 
     a {
       color: #272b30;
@@ -975,9 +984,9 @@ input[type='checkbox']:checked:before {
   display: none;
   z-index: 1000;
   position: fixed;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  width: 10em;
+  inset-block-end: 0.5rem;
+  inset-inline-end: 0.5rem;
+  inline-size: 10em;
   padding: 0.25em;
   border: 1px solid #636363;
   background-color: rgba(0, 0, 0, 0.5);
@@ -998,7 +1007,7 @@ input[type='checkbox']:checked:before {
 }
 
 img.smiley {
-  height: 1em;
+  block-size: 1em;
 }
 
 // Contexts
@@ -1007,23 +1016,26 @@ img.smiley {
 .arch-by-year__each-year {
   display: inline-block;
   vertical-align: top;
-  margin: 0 1.5rem 0 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 1.5rem;
 
   h4 {
-    margin-top: 0.5rem;
+    margin-block-start: 0.5rem;
   }
 }
 
 .arch-year-list {
-  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem;
 }
 
 #other-criteria {
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 
   h3 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
   }
 }
 
@@ -1034,12 +1046,15 @@ img.smiley {
   padding: 0;
 
   li {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }
 
 .arch-sub-cat-list {
-  margin: 0 0 0 1rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 1rem;
+  margin-inline-end: 0;
 }
 
 .arch-tag-list {
@@ -1047,7 +1062,7 @@ img.smiley {
   flex-wrap: wrap;
 
   li {
-    padding-right: 1rem;
+    padding-inline-end: 1rem;
   }
 
   .tag100 {
@@ -1107,10 +1122,10 @@ img.smiley {
 .dc-contactme #content {
   margin: 1rem 0;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
-  border-top: 3px solid #547;
-  border-bottom: 1px solid #436;
-  border-left: 2px solid #444;
-  max-width: $max-content;
+  border-block-start: 3px solid #547;
+  border-block-end: 1px solid #436;
+  border-inline-start: 2px solid #444;
+  max-inline-size: $max-content;
 
   header,
   .content-inner,
@@ -1119,8 +1134,8 @@ img.smiley {
   }
 
   .content-inner h3 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
   }
 }
 
